@@ -1,17 +1,4 @@
 
-
-/* Prevent font size inflation */
-html {
-    -moz-text-size-adjust: none;
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
-}
-
-
-
-/* Set core body defaults */
-
-
 html, body {
   box-sizing: border-box;
   background-color: #050E2D;
@@ -23,47 +10,16 @@ html, body {
   width: 100%;
 }
 
-/* Set shorter line heights on headings and interactive elements */
-h1,
-h2,
-h3,
-h4,
-button,
-input,
-label {
-    line-height: 1.1;
-}
-
-
-
-/* Make images easier to work with */
 img,
 picture {
     max-width: 100%;
     display: block;
 }
 
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-    font-family: inherit;
-    font-size: inherit;
-}
-
-/* Make sure textareas without a rows attribute are not tiny */
-textarea:not([rows]) {
-    min-height: 10em;
-}
-
-/* Anything that has been anchored to should have extra scroll margin */
-:target {
-    scroll-margin-block: 5ex;
-}
 .info {
     background-color: lightsteelblue;
 }
+.donkerblauw {background-color:#050E2D ;}
 
 .darkslategray {background-color:#050E2D ;}
 
@@ -71,7 +27,6 @@ span {
   color:red
 }
 
-#map { height: 180px; }
 
 .sidebar {
   width: 200px;
@@ -86,6 +41,32 @@ span {
   padding: 5px;
   background-color: #ffffff;
 }
-.container { display: flex}
+.container { 
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.thumbnails {
+  display: flex;
+}
 
 .main {flex: 1}
+
+.container2 {
+      display: flex;          /* Enables flexbox */
+      justify-content: space-between; /* Pushes items apart */
+      align-items: center;    /* Vertically aligns items */
+    }
+
+    footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height:5%;
+    width: 100%;
+    background: #050E2D;
+    color: white;
+    text-align: center;
+    padding:1px ;
+  }
+
