@@ -50,7 +50,9 @@ span {
   display: flex;
 }
 
-.main {flex: 1}
+.main {flex: 1;
+margin-bottom: 10px;
+}
 
 .container2 {
       display: flex;          /* Enables flexbox */
